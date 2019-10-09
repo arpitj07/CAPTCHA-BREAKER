@@ -4,12 +4,12 @@ CAPTCHAs were designed to prevent computers from automatically filling out forms
 
 
 ## Content:
--  [Dependencies](https://github.com/arpitj07/CAPTCHA-BREAKER/blob/master/README.md#dependencies-1)
--  [Dataset](https://github.com/arpitj07/CAPTCHA-BREAKER/blob/master/README.md#dataset-2)
--  [Prepocessing](https://github.com/arpitj07/CAPTCHA-BREAKER/blob/master/README.md#prepocessing-3) 
--  [Training](https://github.com/arpitj07/CAPTCHA-BREAKER/blob/master/README.md#training-4)
--  [Testing & Predictions]()
--  [Visaulisation]()
+-  [Dependencies](https://github.com/arpitj07/CAPTCHA-BREAKER/blob/master/README.md#dependencies)
+-  [Dataset](https://github.com/arpitj07/CAPTCHA-BREAKER/blob/master/README.md#dataset)
+-  [Prepocessing](https://github.com/arpitj07/CAPTCHA-BREAKER/blob/master/README.md#prepocessing) 
+-  [Training](https://github.com/arpitj07/CAPTCHA-BREAKER/blob/master/README.md#training)
+-  [Testing & Predictions](https://github.com/arpitj07/CAPTCHA-BREAKER/blob/master/README.md#testing--predictions)
+-  [Visaulisation](https://github.com/arpitj07/CAPTCHA-BREAKER/blob/master/README.md#visualization)
 
 
 ### Dependencies 
@@ -18,8 +18,10 @@ This project requires a lot of modules and packages. This can be installed from 
 ```
 pip install -r requirements.txt for python 2.x
 pip3 install -r requirements.txt for python 3.x
-
 ```
+**NOTE**: IF YOU GET WARNING REGARDING CPU USAGE, SET `os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'`
+
+
 
 ### Dataset
 
@@ -27,12 +29,15 @@ Data for the project is available on [Kaggle](https://www.kaggle.com/fournierp/c
 
 ```
 python download_images.py
-
 ```
+
+
 
 ### Prepocessing
 
 The raw data need to be prepocessed before feeding into the model. All the code for the same is provided in `utils.py`
+
+
 
 
 ### Training 
@@ -44,8 +49,9 @@ To train, run the command:
 
 ```
 python train_model.py --dataset Dataset/ --model Output/
-
 ```
+
+
 
 ### Testing & Predictions:
 
@@ -55,5 +61,11 @@ Final step is to test your model. Pass the following arguments and run the code 
 
 ```
 python test_model.py  --input Datasets/ --model Output/saved_model.pb
-
 ```
+
+
+### Visualization
+
+To view the architechture and training graphs use **Jupyter Notebook**: ` captcha-breaker-tensorflow.ipynb `
+
+
