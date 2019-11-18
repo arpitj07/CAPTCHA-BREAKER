@@ -68,4 +68,3 @@ python test_model.py  --input Datasets/ --model Output/saved_model.pb
 
 To view the architechture and training graphs use **Jupyter Notebook**: ` captcha-breaker-tensorflow.ipynb `
 
-
