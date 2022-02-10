@@ -22,7 +22,7 @@ sklearn == 0.0
 
 # test_model.py: 5
 # train_model.py: 10,11,12
-tensorflow == 2.0.0
+tensorflow == 2.5.3
 
 # test_model.py: 6
 # train_model.py: 13
