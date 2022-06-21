@@ -10,7 +10,7 @@ matplotlib == 3.1.1
 # test_model.py: 2
 # train_model.py: 2
 # utils.py: 1
-numpy == 1.17.2
+numpy == 1.22.0
 
 # train_model.py: 4
 # utils.py: 3
